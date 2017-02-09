@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("field","",252,271);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",272,298);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",339,368);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",408,466);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("global","",517,549);
+$z[4][4]['name']="cfg_templets_skin";
+$z[5]=Array("global","",610,642);
+$z[5][4]['name']="cfg_templets_skin";
+$z[6]=Array("global","",670,702);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",745,777);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",812,844);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",894,926);
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("include","",1575,1610);
+$z[10][4]['filename']="head.htm";
+$z[11]=Array("field","",1756,1815);
+$z[11][4]['name']="typeid";
+$z[11][4]['function']="GetTopTypename(@me)";
+$z[12]=Array("channel","\r\n          <li class=\"dqlia\"><a href=\"[field:typeurl/]\">[field:typename/]</a> </li>\r\n           ",1855,2082);
+$z[12][4]['type']="son";
+$z[12][4]['currentstyle']="<li><a href='~typelink~' class='dqlia'>~typename~</a></li>";
+$z[13]=Array("arclist","\r\n        <p><a href=\"[field:arcurl/]\">[field:title/]</a></p>\r\n        <span>[field:pubdate function=\"MyDate('y/m/d',@me)\"/]</span> \r\n        ",2146,2334);
+$z[13][4]['row']="1";
+$z[13][4]['typeid']="8";
+$z[14]=Array("global","",2423,2455);
+$z[14][4]['name']="cfg_templets_skin";
+$z[15]=Array("field","",2554,2583);
+$z[15][4]['name']="position";
+$z[16]=Array("field","",2634,2663);
+$z[16][4]['name']="typename";
+$z[17]=Array("list","\r\n            <li>\r\n              <div class=\"newtp\"><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:array runphp='yes']@me = (empty(@me['litpic']) ? \"\" : \"<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>\"); [/field:array]</a></div>\r\n              <div class=\"newwz\">\r\n                <div class=\"nztit\"><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a><span>/[field:pubdate function=\"MyDate('y.m.d',@me)\"/]</span></div>\r\n                <div class=\"nzms\">[field:description/]...<a href=\"[field:arcurl/]\">详细</a></div>\r\n                <div class=\"nwwz_bot\">\r\n                  <div class=\"nw1\">查看次数：[field:click/]</div>\r\n                </div>\r\n              </div>\r\n            </li>\r\n             ",2787,3588);
+$z[17][4]['pagesize']="6";
+$z[18]=Array("pagelist","",3681,3738);
+$z[18][4]['listitem']="info,index,end,pre,next,pageno";
+$z[19]=Array("include","",3831,3869);
+$z[19][4]['filename']="footer1.htm";
+
+?>

@@ -1,0 +1,64 @@
+<div class="foot">
+    <div class="footcen auto">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+<!--           <tr>
+          	<td width="100%" align="center">友情链接：{dede:flink titlelen='20' row='20' type='text'}  [field:link /]|  {/dede:flink} </td>
+          </tr>    -->     	
+          <tr>
+            <td width="86%" align="center">{dede:global.cfg_powerby/}</td>
+            <td width="5%"><a href="tencent://message/?uin={dede:global.cfg_qq/}&Site=http://localhost&Menu=yes" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/qq.jpg"></a></td>
+            <td width="9%"><a href="http://weibo.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/xl.jpg"></a></td>
+          </tr>
+          <tr>
+             <td width="100%" align="center"><a href="http://www.miitbeian.gov.cn/" target="_blank">{dede:global.cfg_beian/}</a>&nbsp;&nbsp;&nbsp;&nbsp;{dede:global.cfg_tongji/}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="kefu" id="kefu" style="right: 1px; top: 180px;">
+    <div class="kefu-l pngimg"></div>
+    <div class="kefu-r">
+      <div class="kftop">
+        <div id="guanbi"></div>
+      </div>
+      <div class="kfbox">
+        <ul>
+          <li class="bs"></li>
+          <li class="tell"><a target="_blank" title="在线客服电话" rel="nofollow">{dede:global.cfg_kefutel/}</a></li>
+         <!-- <li class="qq"><a target="_blank" href="tencent://message/?uin=329435595" rel="nofollow">刘小姐</a></li> -->
+<li class="qq"><a title="在线QQ客服" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes" target="_blank" rel="nofollow">周小姐</a></li>
+         
+        </ul>
+      </div>
+      <div class="kfbottom"></div>
+    </div>
+  </div>
+  <script> var kefu = new Floaters(); kefu.addItem("kefu",-1,180,"");kefu.play("kefu");</script>
+  <script>	jQuery('#codeer').qrcode({
+	    render: "table",
+		text  : document.URL,
+		width :75,
+		height:75
+	});	
+$('#guanbi').click(function(){
+ $('#kefu .kefu-l').animate({width:'30px'},500);
+ $('#kefu .kefu-r').animate({width:0},100);
+});
+
+$(function(){
+ $('.kefu-l').click(function(){
+  $(this).animate({width:0},100);
+  $('.kefu-r').animate({width:'157px'},100);
+ })
+});
+
+</script>
+<div style="width:0px;height:0px;position:absolute;top:-999px;left:-999px;">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="erroralert" width="1px" height="1px">
+    <param name="AllowScriptAccess" value="always">
+    <param name="movie" value="http://tongji.baidu.com/logstat.swf">
+    <embed name="erroralert" width="1px" height="1px" allowscriptaccess="always" align="middle" src="http://tongji.baidu.com/logstat.swf" type="application/x-shockwave-flash">
+  </object>
+</div>

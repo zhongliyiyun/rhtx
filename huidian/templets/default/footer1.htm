@@ -1,0 +1,61 @@
+ <div class="clear"></div>
+  <div class="huiding">
+    <div class="huidingtp"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/huiding_tp.jpg"></a></div>
+  </div>
+  <div class="foot">
+    <div class="footcen auto">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <!-- <tr>
+          	<td width="100%" align="center">友情链接：{dede:flink titlelen='20' row='20' type='text'}  [field:link /]|  {/dede:flink} </td>
+          </tr>  -->         	
+          <tr>
+            <td width="86%" align="center">{dede:global.cfg_powerby/}</td>
+            <td width="5%"><a href="tencent://message/?uin={dede:global.cfg_qq/}&Site=http://localhost&Menu=yes" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/qq.jpg"></a></td>
+            <td width="9%"><a href="http://weibo.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/xl.jpg"></a></td>
+          </tr>
+          <tr>
+             <td width="100%" align="center"><a href="http://www.miitbeian.gov.cn/" target="_blank">{dede:global.cfg_beian/}</a>&nbsp;&nbsp;&nbsp;&nbsp;{dede:global.cfg_tongji/}</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="kefu" id="kefu" style="right: 1px; top: 180px;">
+    <div class="kefu-l pngimg"></div>
+    <div class="kefu-r">
+      <div class="kftop">
+        <div id="guanbi"></div>
+      </div>
+      <div class="kfbox">
+        <ul>
+          <li class="bs"></li>
+          <li class="tell"><a target="_blank" title="在线电话客服" rel="nofollow">{dede:global.cfg_kefutel/}</a></li>
+          <li class="qq"><a target="_blank" href="tencent://message/?uin={dede:global.cfg_qq/}" rel="nofollow">周小姐</a></li> 
+        </ul>
+      </div>
+      <div class="kfbottom"></div>
+    </div>
+  </div>
+  <script> var kefu = new Floaters(); kefu.addItem("kefu",-1,180,"");kefu.play("kefu");</script>
+  <script>	jQuery('#codeer').qrcode({
+	    render: "table",
+		text  : document.URL,
+		width :75,
+		height:75
+	});	
+$('#guanbi').click(function(){
+ $('#kefu .kefu-l').animate({width:'30px'},500);
+ $('#kefu .kefu-r').animate({width:0},100);
+});
+
+$(function(){
+ $('.kefu-l').click(function(){
+  $(this).animate({width:0},100);
+  $('.kefu-r').animate({width:'157px'},100);
+ })
+});
+
+</script> 
+</div>
+<script type="text/javascript" async="true" src="{dede:global.cfg_templets_skin/}/js/load.js"></script>

@@ -1,0 +1,1 @@
+[field:body function="htmlspecialchars(cn_substr(Html2text(@me),200))"/]

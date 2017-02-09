@@ -1,0 +1,34 @@
+<div class="top">
+  <div class="topcen auto">
+    <div class="logo">
+      <h1><a href="/">首页</a></h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class=""><a href="/" class="">首页</a>
+          <ul id="nav0">
+            <div class="menubot auto">
+              <div class="topxinwen" id="te">
+               {dede:arclist row=3 titlelen=32 typeid='11'} <a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a> 
+               {/dede:arclist} 
+               </div>
+            </div>
+          </ul>
+        </li>
+        {dede:channelartlist typeid='top'}
+        
+        <li class=""><a href="{dede:field name='typeurl'/}" class="">{dede:field name='typename'/}</a>
+          <ul id="nav1">
+            {dede:channel type='son' noself='yes'}
+            <li> <a href="[field:typelink/]">[field:typename/]</a> </li>
+            {/dede:channel}
+          </ul>
+        </li>
+        {/dede:channelartlist}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+

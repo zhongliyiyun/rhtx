@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="walseo.net" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/css.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/qq.css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/gr.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.qrcode.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/qrcode.js"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<!--[if IE 6]><script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/EvPng.js"></script><script language="javascript" type="text/javascript">EvPNG.fix(".pngimg,#pics,#pngimgb");
+</script><![endif]-->
+</head>
+<body>
+<div class="body1"><script>function show(c,show,type){
+ $(c).bind(type,function(){
+   var num=$(this).index();
+   $(this).addClass('currr').siblings().removeClass('currr');
+   $(show).eq(num).show().siblings(show).hide();
+ })
+}
+</script><script type="text/javascript">$(function(){
+ 
+  show('.menu li','.formtit2 .pcon2','mouseover');
+})
+</script>
+
+{dede:include filename="head.htm"/}
+
+  <div class="clear"></div>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/Marquee.js"></script>
+  <style type="text/css">
+#marquee1{ width:255px; height:277px;overflow:hidden; margin:0 auto;}
+#marquee1 li{ width:255px; height:277px; float:left}
+
+</style>
+  <script type="text/javascript">$(function(){
+$('#marquee1').kxbdSuperMarquee({
+		distance:255,
+		time:4,
+		btnGo:{left:'#goL2',right:'#goR2'},
+		direction:'left'
+	});
+	
+	
+	
+});
+
+</script>
+  <div class="banner">
+    <div class="banner"><script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.switchable.min.js"></script>
+      <style>
+.slide-panel {position:relative; margin:0 auto;width:1440px;height:616px;overflow:hidden;}
+.slide-panel li {float:left;}
+.slide-panel li img {display:block;width:1440px;height:616px;}
+.switchable-triggers {  bottom: 8px; position: absolute;right: 44%; padding-left:18px; width:107px; height:25px;}
+.switchable-triggers li {width:11px; font-size:0px;
+	height:11px;
+	float:left;	
+	background: none repeat scroll 0 0 #CCCCCC;
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 6px;
+    overflow: hidden;}
+.switchable-triggers li.current {	background-color:#641102;}
+</style>
+      <div class="slide1">
+        <div id="slide_1" class="slide-panel">
+          <ul style="position: absolute; left: -1440px; width: 8640px; transition: none 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955); -webkit-transition: none 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);">
+           {dede:arclist row=3  type='image.' typeid='23'}
+            <li>[field:image/]</li>
+            {/dede:arclist}
+             </ul>
+          <ul class="switchable-triggers">
+          </ul>
+        </div>
+      </div>
+      <script>jQuery(document).ready(function($){
+   var slide = $('#slide_1').switchable({
+    putTriggers: 'appendTo',
+    panels: 'li',
+    initIndex: -1,
+    effect: 'scrollRight',
+    easing: 'cubic-bezier(.455, .03, .515, .955)',
+    end2end: true,
+    loop: false, 
+    autoplay: true,
+    interval: 5,
+    api: true
+  }).play();
+});
+</script></div>
+  </div>
+  <div class="pinpai auto">	
+    {dede:myad name='dd'/}
+    
+  </div>
+  <div class="cpfl auto">
+    <ul>
+      <li><a href="{dede:global.cfg_cmsurl/}/a/chanpinzhanshi/chuanghechuangdian" class="cp1">
+        <p>床和床垫</p>
+        <span>bed and matress</span></a></li>
+      <li><a href="{dede:global.cfg_cmsurl/}/a/chanpinzhanshi/gongnenshafa" class="cp2">
+        <p>功能沙发</p>
+        <span>recliner sofa</span></a></li>
+      <li><a href="{dede:global.cfg_cmsurl/}/a/chanpinzhanshi/shafachuang" class="cp3">
+        <p>沙发床</p>
+        <span>sofa bed</span></a></li>
+      <li><a href="{dede:global.cfg_cmsurl/}/a/chanpinzhanshi/xiandaishafa" class="cp4">
+        <p>现代沙发</p>
+        <span>mordern sofa</span></a></li>
+      <li><a href="{dede:global.cfg_cmsurl/}/a/chanpinzhanshi/xingjijiudiandingzhi" class="cp5">
+        <p>窗帘定制</p>
+        <span>Curtain customization</span></a></li>
+    </ul>
+  </div>
+  <div class="dingzhi auto">
+    <div class="dingzhicen auto">
+      <ul>
+        <li><a href="{dede:global.cfg_cmsurl/}/a/lianxiwomen/lianxifangshi"><img src="{dede:global.cfg_templets_skin/}/images/ctus.jpg"></a></li>
+        <!-- <li><a href="{dede:global.cfg_basehost/}/plus/guestbook.php"><img src="{dede:global.cfg_templets_skin/}/images/wydz.jpg"></a></li> -->
+        <li><a href="#form"><img src="{dede:global.cfg_templets_skin/}/images/wydz.jpg"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="syxinwen auto">
+    <div class="syxinleft">
+     <ul>
+       {dede:arclist row='3' infolen='200' typeid='8'}
+        <li>
+          <div class="lisj">
+            <p>[field:pubdate function="MyDate('m',@me)"/]</p>
+            <span>[field:pubdate function="MyDate('y-m',@me)"/]</span></div>
+          <div class="lswz">
+            <p><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+            <span>[field:info/]...</span></div>
+        </li>
+     {/dede:arclist}
+      </ul>
+      </div>
+    <div id="marquee1">
+      <ul style="width: 1020px;">
+      {dede:arclist row=5 type='image.' typeid='9' }
+        <li>
+          <div class="syxinright"><b>[field:pubdate function="MyDate('y-m-d',@me)"/]</b>
+            <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+            <a href="[field:arcurl/]" title="[field:title/]">[field:image/]</a>
+            <p>[field:info/]...</p>
+          </div>
+        </li>
+         {/dede:arclist}
+        </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="huiding">
+    <div class="huidingtp"><a href="/"><img src="{dede:global.cfg_templets_skin/}/images/huiding_tp.jpg"></a></div>
+  </div>
+  <div class="syliuyan">
+    <div class="syliuyancen auto">
+    
+    
+      <form id="form" name="form" action="/plus/diy.php" enctype="multipart/form-data" method="post" onsubmit="return chkform()">
+        <input type="hidden" name="action" value="post">
+        <input type="hidden" name="diyid" value="1">
+        <input type="hidden" name="do" value="2">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td width="50%" height="39"><input type="text" name="name" id="name" class="mingcheng" value="尊称/Name..." onfocus="javascript:if(this.value == '尊称/Name...') this.value = '';" onblur="if(this.value==''){this.value='尊称/Name...';};"></td>
+              <td width="50%"><input type="text" name="telphone" id="telphone" class="dianhua" value="电话/Tel..." onfocus="javascript:if(this.value == '电话/Tel...') this.value = '';" onblur="if(this.value==''){this.value='电话/Tel...';};"></td>
+            </tr>
+            <tr>
+              <td height="49" colspan="3"><input type="text" name="companyname" class="dizhi" value="地址/Add..." onfocus="javascript:if(this.value == '地址/Add...') this.value = '';" onblur="if(this.value==''){this.value='地址/Add...';};"></td>
+            </tr>
+            <tr>
+              <td height="174" colspan="3"><textarea name="demand" id="demand" class="xuqiu" style="overflow-y:hidden" onfocus="javascript:if(this.value == '需求/Detals...') this.value = '';" onblur="if(this.value==''){this.value='需求/Detals...';};">需求/Detals...</textarea></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+               <input type="hidden" name="dede_fields" value="name,text;telphone,text;demand,multitext;companyname,text">
+              <input type="hidden" name="dede_fieldshash" value="67dde1cf7a853fcce14c92b5dc12e212">
+              <input type="submit" name="submit" value="" class="tijiao">
+                </td>
+            </tr>
+            <tr>
+              <td colspan="3"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+       <script language="javascript" type="text/javascript">function chkform(){
+
+if(document.form.title.value=="尊称/Name..."){
+   alert('姓名不能为空！');
+   document.form.title.focus();
+  return  false; 
+}
+else if(document.form.tel.value=="电话/Tel..."){
+   alert('电话不能为空！');
+   document.form.tel.focus();
+   return  false; 
+}
+else if(document.form.email.value=="地址/Add..."){
+   alert('地址不能为空！');
+   document.form.email.focus();
+  return  false; 
+}
+
+else if(document.form.contenta.value=="需求/Detals..."){
+      alert("需求不能为空！");
+   document.form.contenta.focus();
+  return  false; 
+}
+else
+{
+return  true; 
+}
+}
+</script></div>
+  </div>
+  {dede:include filename="footer.htm"/}
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/css.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/qq.css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/gr.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.qrcode.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/qrcode.js"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<!--[if IE 6]><script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/EvPng.js"></script><script language="javascript" type="text/javascript">EvPNG.fix(".pngimg,#pics,#pngimgb");
+</script><![endif]-->
+</head>
+<body>
+<div class="body1"><script>function show(c,show,type){
+ $(c).bind(type,function(){
+   var num=$(this).index();
+   $(this).addClass('currr').siblings().removeClass('currr');
+   $(show).eq(num).show().siblings(show).hide();
+ })
+}
+
+
+</script><script type="text/javascript">$(function(){
+ 
+  show('.menu li','.formtit2 .pcon2','mouseover');
+})
+
+</script>
+  {dede:include filename="head.htm"/}
+  <div class="clear"></div>
+  <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.validate.js"></script>
+  <div class="mainer auto">
+    <div class="sidebar">
+      <div class="subnav">
+        <div class="subnavtit">{dede:field name='typeid' function="GetTopTypename(@me)" /}　CONTACT US</div>
+        <ul>
+         {dede:channel type='son' currentstyle="
+      <li><a href='~typelink~' class='dqlia'>~typename~</a></li>
+      "}
+          <li class="dqlia"><a href="[field:typeurl/]">[field:typename/]</a> </li>
+           {/dede:channel}
+        </ul>
+      </div>
+      <div class="tbtj">
+        {dede:arclist row=1 typeid='8'}
+        <p><a href="[field:arcurl/]">[field:title/]</a></p>
+        <span>[field:pubdate function="MyDate('y/m/d',@me)"/]</span> 
+        {/dede:arclist}
+        </div>
+    </div>
+    <div class="main">
+      <div class="nybanner"><img src="{dede:global.cfg_templets_skin/}/images/nybanner.jpg"></div>
+      <div class="dqwz">
+        <div class="dqwzwz">当前位置：{dede:field name='position'/}</div>
+        <div class="dqwztp">
+          <p>{dede:field name='typename'/}</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="page_index">
+          <div class="leaveout">
+            <div class="leaveout_1">注：带"*"的内容请您必须填写，您所填写的个人信息我们会严格遵守保密原则</div>
+            
+              <form name="myform" id="myform" action="/plus/diy.php" enctype="multipart/form-data" method="post">
+              <input type="hidden" name="action" value="post">
+              <input type="hidden" name="diyid" value="1">
+              <input type="hidden" name="do" value="2">
+              <table id="leavetable" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                
+                  <tr>
+                    <td width="77" height="40" class="left_L">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                    <td width="210" class="t_r"><input type="text" name="name" id="name" validate="minlength:1, maxlength:10, required:true" maxlength="20" class="kuangt" value="">
+                      <font color="red">*</font></td>
+                    <td width="75" class="t_r"><span class="left_L">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span></td>
+                    <td width="298" class="t_r"><select name="sex" style="width:150px" class="input_radio ">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td height="40" class="left_L">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</td>
+                    <td class="t_r"><input type="text" name="telphone" id="telphone" maxlength="100" class="kuangt" validate=" required:true" value="">
+                      <font color="red">*</font></td>
+                    <td class="t_r"><span class="left_L">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span></td>
+                    <td class="t_r"><input type="text" name="email" id="email" maxlength="20" class="kuangt" value=""></td>
+                  </tr>
+                  <tr>
+                    <td height="40" class="left_L">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</td>
+                    <td colspan="3" class="t_r"><input type="text" name="companyname" id="companyname" maxlength="100" class="kuangt2" value=""></td>
+                  </tr>
+                  <tr>
+                    <td class="left_L">內&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容：</td>
+                    <td colspan="3" class="c_r"><textarea name="demand" id="demand" rows="10" cols="70" class="tc_r" validate=" required:true"></textarea>
+                      <font color="red">*</font></td>
+                  </tr>
+                  <tr>
+                    <td height="40" class="tl">&nbsp;</td>
+                    <td colspan="3" class="tl">
+                   <input type="hidden" name="dede_fields" value="name,text;telphone,text;demand,multitext;companyname,text">
+              <input type="hidden" name="dede_fieldshash" value="67dde1cf7a853fcce14c92b5dc12e212">
+                      <input type="submit" name="submit" value="提 交" class="tj"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+            
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+ {dede:include filename="footer1.htm"/} 
+</div>
+</body>
+</html>

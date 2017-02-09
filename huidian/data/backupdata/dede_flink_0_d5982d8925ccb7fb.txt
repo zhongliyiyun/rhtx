@@ -1,0 +1,2 @@
+INSERT INTO `dede_flink` VALUES('31','1','http://wwww.walseo.net','营销型网站','营销型网站建设公司','','','1481768720','1','1');
+INSERT INTO `dede_flink` VALUES('28','1','http://www.cqrhtx.com','重庆融汇天下科技有限公司','融汇天下','','','1481768070','9','2');

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/css.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/qq.css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/gr.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.qrcode.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/qrcode.js"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<!--[if IE 6]><script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/EvPng.js"></script><script language="javascript" type="text/javascript">EvPNG.fix(".pngimg,#pics,#pngimgb");
+</script><![endif]-->
+</head>
+<body>
+<div class="body1"><script>function show(c,show,type){
+ $(c).bind(type,function(){
+   var num=$(this).index();
+   $(this).addClass('currr').siblings().removeClass('currr');
+   $(show).eq(num).show().siblings(show).hide();
+ })
+}
+
+
+</script><script type="text/javascript">$(function(){
+ 
+  show('.menu li','.formtit2 .pcon2','mouseover');
+})
+
+</script>
+  {dede:include filename="head.htm"/}
+  <div class="clear"></div>
+  <div class="mainer auto">
+    <div class="sidebar">
+      <div class="subnav">
+        <div class="subnavtit">{dede:field name='typeid' function="GetTopTypename(@me)" /}　PRODUCT</div>
+        <ul>
+           {dede:channel type='son' currentstyle="
+      <li><a href='~typelink~' class='dqlia'>~typename~</a></li>
+      "}
+          <li class="dqlia"><a href="[field:typeurl/]">[field:typename/]</a> </li>
+           {/dede:channel}
+        </ul>
+      </div>
+      <div class="tbtj">
+        {dede:arclist row=1 typeid='8'}
+        <p><a href="[field:arcurl/]">[field:title/]</a></p>
+        <span>[field:pubdate function="MyDate('y/m/d',@me)"/]</span> 
+        {/dede:arclist}
+        </div>
+    </div>
+    <div class="main">
+      <div class="nybanner"><img src="{dede:global.cfg_templets_skin/}/images/nybanner.jpg"></div>
+      <div class="dqwz">
+        <div class="dqwzwz">当前位置：{dede:field name='position'/}</div>
+        <div class="dqwztp">
+          <p>{dede:field name='typename'/}</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="product_list">
+          <ul>
+          
+          {dede:list pagesize='12'}
+            <li><a href="[field:arcurl/]" title="[field:title/]">[field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>"); [/field:array]</a>
+              <p><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+            </li>
+             {/dede:list}
+            
+          </ul>
+          </div>
+          
+         <div class="page_list">
+  <ul>
+  {dede:pagelist listitem="info,index,end,pre,next,pageno/}
+  </ul>
+</div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+{dede:include filename="footer1.htm"/} 
+</div>
+</body>
+</html>

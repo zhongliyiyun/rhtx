@@ -1,0 +1,185 @@
+.kefu {
+	width:auto;
+	position:absolute;
+	right: 5px;
+	top: 180px;
+	z-index: 1000;
+}
+.kefu .kefu-l {
+	float:left;
+	width:30px;
+	overflow:hidden;
+	height:161px;
+	background:red;
+	cursor: pointer;
+	background:url("../images/kefu_l.gif") no-repeat scroll 0 0 transparent;
+}
+.kefu .kefu-r {
+	float:left;
+	overflow: hidden;
+	width: 0;
+}
+.kefu .kftop {
+	background:url(../images/kefu_top.gif) no-repeat;
+	height:36px;
+	width:157px;
+}
+.kefu .kfbottom {
+	background:url(../images/kefu_bottom.gif) no-repeat;
+	height:14px;
+	width:157px;
+}
+.kefu .kfbox {
+	overflow:hidden;
+	line-height:26px;
+	width: 150px;
+	background:url(../images/kefu_xian.gif);
+	padding: 0 4px 0 3px;
+}
+.kefu .kfbox ul {
+	padding: 0;
+	margin: 0;
+}
+.kefu .kfbox ul li {
+	height: 35px;
+	overflow: hidden;
+	text-align: center;
+	padding: 5px 0 0 0;
+	line-height: 35px;
+}
+.kefu .kfbox ul li a {
+	color:#000;
+}
+.kefu .kfbox ul li.qq {
+	background:url("../images/qq.gif") no-repeat scroll 2px 3px transparent;
+}
+.kefu .kfbox ul li.msn {
+	background:url("../images/msn.gif") no-repeat scroll 2px 3px transparent;
+}
+.kefu .kfbox ul li.spk {
+	background:url("../images/spk.gif") no-repeat scroll 2px 3px transparent;
+}
+.kefu .kfbox ul li.codeer {
+	height:75px;
+	padding-bottom: 5px;
+}
+.kefu .kfbox ul li.codeer span {
+	float: left;
+	width: 66px;
+	color: #999;
+	line-height: 18px;
+}
+.kefu .kfbox ul li.codeer #codeer {
+	width:75px;
+	height:75px;
+}
+.kefu .kfbox ul li.tell {
+	background:url("../images/tel.gif") no-repeat scroll 2px 3px transparent;
+	font-family: Arial;
+	font-size: 18px;
+	text-indent: 20px;
+	line-height: 42px;
+}
+.kefu .kfbox ul li.bs {
+	background:url("../images/ds.gif") no-repeat scroll 2px 3px transparent;
+	padding: 0;
+	height:7px;
+}
+.kefu .kfbox ul li.wang {
+	background:url("../images/taobao.gif") no-repeat scroll 2px 3px transparent;
+}
+.kefu .kfbox ul li.dianhua {
+	background: url("../images/dianh.gif") no-repeat scroll 12px 17px transparent;
+	height: 48px;
+	font-size: 18px;
+	color: red;
+	width: 178px;
+}
+.kefu .kfbox ul li.dianhua font {
+	padding-left: 5px;
+	font-family: Tahoma;
+	text-indent:45px;
+	float:left;
+	_font-weight: bold;
+}
+.kefu .kfbox ul li .henggan {
+	float:left;
+	background: url("../images/hengganbg.gif") no-repeat scroll 4px 0 transparent;
+	font-size: 0;
+	height: 13px;
+	overflow: hidden;
+	width: 100%;
+}
+.kefu .kfbox ul li img {
+	vertical-align:middle;
+}
+#guanbi {
+	width:145px;
+	height:30px;
+	overflow:hidden;
+	float: right;
+}
+#pages {
+	width:690px;
+	padding:10px 0 10px;
+	text-align:center;
+	font:12px;
+	overflow:hidden;
+}
+#pages a {
+	display:inline-block;
+	padding:0px 8px;
+	height:22px;
+	font-size:12px;
+	line-height:22px;
+	background:#fff;
+	border:1px solid #e3e3e3;
+	text-align:center;
+	color:#333
+}
+#pages a.a1 {
+	padding:0px 12px;
+	height:22px;
+	line-height:22px;
+	margin-top:0px;
+}
+#pages a:hover {
+	background:#f1f1f1;
+	color:#000;
+	text-decoration:none;
+}
+#pages span {
+	display:inline-block;
+	padding:0px 8px;
+	height:22px;
+	line-height:22px;
+	background:#0A92EF;
+	border:1px solid #0A92EF;
+	color:#fff;
+	text-align:center;
+}
+.zxly0003 {
+	background: url("../images/zxly_bj.jpg") no-repeat scroll 0 0 transparent;
+	font-family:"宋体";
+	font-size: 14px;
+	height: 540px;
+	width: 600px;
+}
+.tj001 {
+	background: url("../images/tj.jpg") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #B6BED2;
+	cursor: pointer;
+	font-size: 0;
+	height: 30px;
+	width: 100px;
+}
+.ct001 {
+	background: url("../images/ct.jpg") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #B6BED2;
+	cursor: pointer;
+	font-size: 0;
+	height: 30px;
+	width: 100px;
+}

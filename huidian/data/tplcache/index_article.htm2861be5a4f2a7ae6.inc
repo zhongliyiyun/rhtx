@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("field","",270,289);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",290,316);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",357,386);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",426,484);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("global","",535,567);
+$z[4][4]['name']="cfg_templets_skin";
+$z[5]=Array("global","",628,660);
+$z[5][4]['name']="cfg_templets_skin";
+$z[6]=Array("global","",688,720);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",763,795);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",830,862);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",912,944);
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("global","",1074,1106);
+$z[10][4]['name']="cfg_templets_skin";
+$z[11]=Array("include","",1619,1654);
+$z[11][4]['filename']="head.htm";
+$z[12]=Array("field","",1800,1859);
+$z[12][4]['name']="typeid";
+$z[12][4]['function']="GetTopTypename(@me)";
+$z[13]=Array("channel","\r\n          <li class=\"dqlia\"><a href=\"[field:typeurl/]\">[field:typename/]</a> </li>\r\n           ",1913,2140);
+$z[13][4]['type']="son";
+$z[13][4]['currentstyle']="<li><a href='~typelink~' class='dqlia'>~typename~</a></li>";
+$z[14]=Array("arclist","\r\n        <p><a href=\"[field:arcurl/]\">[field:title/]</a></p>\r\n        <span>[field:pubdate function=\"MyDate('y/m/d',@me)\"/]</span> \r\n        ",2206,2394);
+$z[14][4]['row']="1";
+$z[14][4]['typeid']="8";
+$z[15]=Array("global","",2486,2518);
+$z[15][4]['name']="cfg_templets_skin";
+$z[16]=Array("field","",2617,2646);
+$z[16][4]['name']="position";
+$z[17]=Array("field","",2698,2727);
+$z[17][4]['name']="typename";
+$z[18]=Array("field","",2824,2845);
+$z[18][4]['name']="content";
+$z[19]=Array("include","",2925,2963);
+$z[19][4]['filename']="footer1.htm";
+
+?>
